@@ -7,8 +7,7 @@ pwlist = []
 
 pwl = 12
 i = 0
-u = 0
-p = 0
+
 
 #pwlist.append(pw)
 #print(pw)
