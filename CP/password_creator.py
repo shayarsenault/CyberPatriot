@@ -14,7 +14,7 @@ rpw = input('enter RPW')
 #print(pw)
 def echo_pw():
 	os.system('sudo passwd ' + users[i])
-
+	os.system('echo -e ' + rpw)
 	os.system('echo -e ' + pwlist[i])
 	os.system('echo -e ' + pwlist[i])
 
