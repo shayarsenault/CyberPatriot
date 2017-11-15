@@ -1,4 +1,5 @@
 from random import *
+import os
 
 chars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0','!','@','#','$']
 
@@ -11,7 +12,10 @@ i = 0
 
 #pwlist.append(pw)
 #print(pw)
-
+def echo_pw():
+	os.system('sudo passwd ' + users[i])
+	os.system('echo -e ' + pwlist[i])
+	os.system('echo -e ' + pwlist[i])
 
 while 1:
 	i+=1
@@ -24,8 +28,9 @@ while 1:
 		for i in range(len(users)):
 			f.write('%s: ' % users[i])
 			f.write('%s\n\n' % pwlist[i])
-
+			echo_pw()
 		f.close()
+		
 		exit()
 	else:
 		while len(pw) <= pwl:
