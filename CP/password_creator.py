@@ -8,12 +8,13 @@ pwlist = []
 
 pwl = 12
 i = 0
-
+rpw = input('enter RPW')
 
 #pwlist.append(pw)
 #print(pw)
 def echo_pw():
 	os.system('sudo passwd ' + users[i])
+
 	os.system('echo -e ' + pwlist[i])
 	os.system('echo -e ' + pwlist[i])
 
