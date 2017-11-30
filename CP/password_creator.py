@@ -9,15 +9,6 @@ pwlist = []
 
 pwl = 12
 i = 0
-#rpw = input('enter RPW')
-
-#pwlist.append(pw)
-#print(pw)
-def echo_pw():
-	os.system('sudo passwd ' + users[i])
-	os.system('echo -e ' + rpw)
-	os.system('echo -e ' + pwlist[i])
-	os.system('echo -e ' + pwlist[i])
 
 while 1:
 	i+=1
@@ -36,6 +27,7 @@ while 1:
 		exit()
 	else:
 		while len(pw) <= pwl:
+			
 			pw += pw.join(x for x in chars[randrange(64)])
 		
 		pwlist.append(pw)
